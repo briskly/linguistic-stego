@@ -11,7 +11,7 @@ To embed info first of all, you need to build table using command:
 After you can embed random message.  
 ```python main.py embed```  
 And extract it back
-python main.py extract
+```python main.py extract```
 ##Help
 ###usage: 
 ```python main.py [-h] [-t texts-for-synonyms] [-s synonym-table-file] 
