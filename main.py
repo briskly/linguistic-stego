@@ -7,7 +7,7 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from time import time
 
 
-def build_table(curMorpho, count=100, printRes=True):
+def build_table(curMorpho, count=50, printRes=True):
     with open(args.t) as f:
         texts = json.load(f)
         table = tableMaker(texts[:count], curMorpho)
