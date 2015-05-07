@@ -62,6 +62,8 @@ class tableMaker:
         sortedTable = [w[0] for w in sorted(self.table.iteritems(), key=lambda x:x[1], reverse=True)]
         usedWords = set()
         for wNum, w in enumerate(sortedTable):
+            if wNum % 20 == 0:
+                print 100 * float(wNum) / len(sortedTable)
             if w in usedWords:
                 continue
             syns = self.synGetter.find_syns(w)
